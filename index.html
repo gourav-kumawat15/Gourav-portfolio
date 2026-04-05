@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gourav Kumawat | Full Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Gourav Kumawat - CSE student passionate about web development, AI, and building innovative software solutions. Explore my projects and skills." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>GK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for Opportunities</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Gourav Kumawat</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-description">
+        CSE student crafting intelligent, scalable web experiences — blending AI, creativity, and clean code to build the future.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="Gourav kumawat Resume.pdf" target="_blank" class="btn btn-secondary" id="hero-resume-btn" download>
+          <i class="fas fa-file-pdf"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+          <i class="fas fa-paper-plane"></i> Let's Connect
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/gokuUI15" target="_blank" class="social-icon" aria-label="GitHub" id="hero-github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/gourav-kumawat-289a63286" target="_blank" class="social-icon" aria-label="LinkedIn" id="hero-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:kumawatmech8888@gmail.com" class="social-icon" aria-label="Email" id="hero-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-core">
+          <span class="avatar-initials">GK</span>
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+        <div class="floating-badge badge-2"><i class="fab fa-js"></i> JS</div>
+        <div class="floating-badge badge-3"><i class="fas fa-brain"></i> AI/ML</div>
+        <div class="floating-badge badge-4"><i class="fab fa-react"></i> React</div>
+      </div>
+    </div>
+    <div class="scroll-hint" id="scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate developer on a mission to innovate</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm <strong>Gourav Kumawat</strong>, a Computer Science Engineering student with a deep passion for <span class="highlight">web development</span>, <span class="highlight">artificial intelligence</span>, and building software that solves real-world problems.</p>
+          <p>I love exploring the intersection of design and technology — creating experiences that are not just functional, but genuinely delightful to use. From AI-powered mobile apps to mesh networking solutions, I enjoy tackling complex challenges.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to open-source, or thinking up innovative ideas to bring to life.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-visual">
+          <div class="info-card glass-card">
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">B.Tech – Computer Science Engineering</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">India</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <span class="info-label">Focus</span>
+                <span class="info-value">Web Dev, AI & Open Source</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-circle" style="color: #4ade80;"></i>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Open to Internships & Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="HTML5" data-level="90">
+              <div class="skill-info"><span>HTML5</span><span class="skill-percent">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 90%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="CSS3" data-level="85">
+              <div class="skill-info"><span>CSS3</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 85%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="JavaScript" data-level="80">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-server"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Python" data-level="85">
+              <div class="skill-info"><span>Python</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 85%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Java" data-level="70">
+              <div class="skill-info"><span>Java</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 70%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="C" data-level="75">
+              <div class="skill-info"><span>C</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & DevOps</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Git" data-level="80">
+              <div class="skill-info"><span>Git & GitHub</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 80%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Linux" data-level="70">
+              <div class="skill-info"><span>Linux</span><span class="skill-percent">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 70%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="VS Code" data-level="90">
+              <div class="skill-info"><span>VS Code</span><span class="skill-percent">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-brain"></i>
+            <h3>AI & Emerging Tech</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Machine Learning" data-level="65">
+              <div class="skill-info"><span>Machine Learning</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 65%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Computer Vision" data-level="60">
+              <div class="skill-info"><span>Computer Vision</span><span class="skill-percent">60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 60%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Mesh Networking" data-level="65">
+              <div class="skill-info"><span>Mesh Networking</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--target: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Tags -->
+      <div class="tech-tags">
+        <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+        <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+        <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+        <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
+        <span class="tech-tag"><i class="fab fa-linux"></i> Linux</span>
+        <span class="tech-tag"><i class="fas fa-brain"></i> AI/ML</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of my most impactful work</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" id="project-stress-tracker">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-heart-pulse"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/gokuUI15" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI-Based Stress Tracker</h3>
+          <p class="project-desc">An AI-powered mobile application that monitors stress levels in real-time using facial expression analysis. Leverages computer vision and machine learning to provide instant wellness insights and personalized recommendations.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">OpenCV</span>
+            <span class="project-tech">TensorFlow</span>
+            <span class="project-tech">ML</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-completed">
+              <span class="status-dot"></span> Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" id="project-mesh-meeting">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/gokuUI15" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Offline Virtual Meeting</h3>
+          <p class="project-desc">A revolutionary peer-to-peer communication platform enabling virtual meetings without any internet connection, Wi-Fi, or SIM card using mesh networking technology. Bridging the digital divide in connectivity.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech">Mesh Network</span>
+            <span class="project-tech">P2P</span>
+            <span class="project-tech">WebRTC</span>
+            <span class="project-tech">Java</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-completed">
+              <span class="status-dot"></span> Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" id="project-doctor-app">
+          <div class="project-card-header">
+            <div class="project-icon-wrap">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/gourav-kumawat15/doctor-patient-management-app" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Doctor & Patient Management App</h3>
+          <p class="project-desc">A comprehensive healthcare management system with a glassmorphism-inspired UI for streamlining doctor-patient interactions, appointment scheduling, and medical record management with a premium user experience.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech">HTML</span>
+            <span class="project-tech">CSS</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">Healthcare</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-status status-completed">
+              <span class="status-dot"></span> Completed
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section section-dark">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Resume & <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">My academic and professional background</p>
+      </div>
+      <div class="resume-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="timeline-type">Education</span>
+              </div>
+              <h3>B.Tech – Computer Science Engineering</h3>
+              <p class="timeline-place">Engineering College, India</p>
+              <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 – Present</p>
+              <p class="timeline-desc">Studying core CS fundamentals including data structures, algorithms, AI, and software engineering. Actively building projects and participating in hackathons.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <i class="fas fa-code"></i>
+                <span class="timeline-type">Development</span>
+              </div>
+              <h3>Full Stack & AI Development</h3>
+              <p class="timeline-place">Self-taught & Project-based</p>
+              <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 – Present</p>
+              <p class="timeline-desc">Built multiple end-to-end applications spanning web development, AI/ML, and networking. Focused on creating solutions that blend good design with smart technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="resume-cta">
+          <div class="resume-download-card glass-card">
+            <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+            <div class="resume-info">
+              <h3>Download My Resume</h3>
+              <p>Get the full picture of my skills, projects, and experience</p>
+            </div>
+            <a href="Gourav kumawat Resume.pdf" target="_blank" class="btn btn-primary" id="resume-download-btn" download>
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Have a project idea or opportunity? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card glass-card" id="contact-email-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Email Me</span>
+              <a href="mailto:kumawatmech8888@gmail.com" class="contact-value">kumawatmech8888@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card" id="contact-linkedin-card">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Connect on LinkedIn</span>
+              <a href="https://www.linkedin.com/in/gourav-kumawat-289a63286" target="_blank" class="contact-value">gourav-kumawat-289a63286</a>
+            </div>
+          </div>
+          <div class="contact-card glass-card" id="contact-github-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Follow on GitHub</span>
+              <a href="https://github.com/gokuUI15" target="_blank" class="contact-value">github.com/gokuUI15</a>
+            </div>
+          </div>
+          <div class="availability-badge glass-card">
+            <div class="avail-dot"></div>
+            <div>
+              <strong>Currently Available</strong>
+              <p>Open to internships, freelance projects, and full-time roles</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form glass-card" id="contact-form">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Hello Gourav, I'd love to discuss..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>GK<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building the future, one line of code at a time.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/gokuUI15" target="_blank" class="social-icon" aria-label="GitHub" id="footer-github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gourav-kumawat-289a63286" target="_blank" class="social-icon" aria-label="LinkedIn" id="footer-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:kumawatmech8888@gmail.com" class="social-icon" aria-label="Email" id="footer-email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gourav Kumawat. Crafted with <span style="color: #f43f5e;">♥</span> and a lot of coffee.</p>
+        <a href="#home" class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
